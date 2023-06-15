@@ -1,12 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - main print puts
- * :wq
- * Description : this first program that will print with puts function
+ * main - main print puts \"Programming is like building a multilingual puzzle
  *
- * Return :always 0 ('successfully')
+ * Return: always 0 ('successfully')
  */
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
