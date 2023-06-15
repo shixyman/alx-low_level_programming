@@ -1,0 +1,14 @@
+#include <unistd.h>
+
+/**
+ * main - display quote with another header unix
+ *
+ * Return: 1 (successfully)
+ *
+ */
+
+int main(void)
+{
+	write(1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	return (1);
+}
