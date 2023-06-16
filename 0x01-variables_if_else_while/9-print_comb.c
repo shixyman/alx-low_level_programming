@@ -15,7 +15,7 @@ int main(void)
 	while (alpha < 10)
 	{
 		putchar(alpha + 48);
-		if (alpha >9)
+		if (alpha < 9)
 		{
 			putchar(44);
 			putchar(32);
