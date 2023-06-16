@@ -9,15 +9,15 @@ int main(void)
 {
 	int l = 1, sideleft, sideright;
 
-	while (i < 100)
+	while (l < 100)
 	{
-		sideleft = i / 10;
-		sideright = i % 10;
+		sideleft = l / 10;
+		sideright = l % 10;
 
 		if (sideleft < sideright)
 		{	putchar(sideleft + '0');
 			putchar(sideright + '0');
-			if (i < 89)
+			if (l < 89)
 			{
 				putchar(44);
 				putchar(32);
