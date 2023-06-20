@@ -6,15 +6,15 @@
  * Return:0 always successuffy
 */
 
-void print_alphabet(void);
-
 void print_alphabet_x10(void)
 {
 	int loop = 1;
 
 	while (loop < 10)
 	{
-		for ( char i = 'a' ; i <= 'z' ; i += 1)
+		char i;
+
+		for ( i = 'a' ; i <= 'z' ; i += 1)
 		{
 			_putchar('\n');
 		}
