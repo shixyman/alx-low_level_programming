@@ -10,10 +10,10 @@ int _abs(int number)
 {
 	if (number < 0)
 	{
-		return (n * (-1));
+		return (number * (-1));
 	}
 	else
 	{
-		return (n);
+		return (number);
 	}
 }
