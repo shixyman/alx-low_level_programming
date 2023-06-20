@@ -21,10 +21,11 @@ int main(void)
 		{
 			sum  += c;
 		}
+
 		temp = b + c;
 		b = c;
 		c = temp;
-		a += 1;
+		++i;
 
 	}
 
