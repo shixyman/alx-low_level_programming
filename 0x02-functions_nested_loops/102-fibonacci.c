@@ -11,7 +11,7 @@ int main(void)
 {
 	int compt = 0;
 	unsigned long a = 0, b = 1, sum;
-	
+
 	while (compt < 50)
 	{
 		sum = a + b;
