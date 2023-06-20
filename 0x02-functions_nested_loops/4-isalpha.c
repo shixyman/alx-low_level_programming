@@ -15,7 +15,10 @@ int _isalpha(int alpha)
 		return (1);
 	}
 	else if (alpha >= 97 && alpha <= 122)
-	{	return (0);
+	{	return (1);
 	}
-	return (0);
-}
+	else
+	{
+		return (0);
+	}
+}	
