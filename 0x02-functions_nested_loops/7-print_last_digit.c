@@ -6,7 +6,8 @@
  * @digit: the argument of last digit
  * Return: success  give the result of last digit
 */
-int print_last_digit(int digit);
+
+int print_last_digit(int digit)
 {
 	int last;
 
