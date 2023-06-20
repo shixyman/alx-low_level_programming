@@ -9,13 +9,13 @@
 
 int print_last_digit(int digit)
 {
-	int last;
+	int last = digit % 10;
 
 	if (digit < 0)
 	{
 		digit = digit * -1;
 	}
-	last = digit % 10;
+
 	_putchar((last) + '0');
 	return (last);
 }
