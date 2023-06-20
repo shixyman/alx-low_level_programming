@@ -14,7 +14,7 @@ int main(void)
 {
 	unsigned long int i;
 	unsigned long int before = 1;
-	unsigned long int aft = 2;
+	unsigned long int after = 2;
 	unsigned long int lon = 1000000000;
 	unsigned long int before1, before2, after1, after2;
 
@@ -34,8 +34,8 @@ int main(void)
 
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", afterer1 + (after2 / lon));
-		printf("%lu", aft2 % l);
+		printf(", %lu", after1 + (after2 / lon));
+		printf("%lu", after2 % lon);
 		after1 = after1 + before1;
 		before1 = after1 - before1;
 		after2 = after2 + before2;
