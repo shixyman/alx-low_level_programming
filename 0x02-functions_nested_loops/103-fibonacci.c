@@ -19,7 +19,7 @@ int main(void)
 	{
 		if (b < 4000000 && (b % 2) == 0)
 		{
-			sum = sum + c;
+			sum  += c;
 		}
 		temp = b + c;
 		b = c;
