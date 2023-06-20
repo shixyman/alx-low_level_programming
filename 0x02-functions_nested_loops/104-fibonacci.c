@@ -2,8 +2,7 @@
 
 
 /**
- * main - fibonacci 
- *
+ * main - fibonacci
  * display  the first 98 Fibonacci numbers start 0 , 2
  * seperate with comma and new line
  *
