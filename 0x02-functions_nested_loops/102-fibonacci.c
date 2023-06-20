@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int count = 0;
+	int compt = 0;
 	unsigned long a = 0, b = 1, sum;
 	
 	while (compt < 50)
