@@ -2,13 +2,13 @@
 
 
 /**
- * main - finds and prints the sum of the even-valued terms
- * followed by a new line
- * Return: Always 0 (Success)
+ * main - find and display  the sum of the even-valued terms
+ *  a new line
+ * Return: Always 0 (Successfully)
  */
 int main(void)
 {
-	int a =1;
+	int a = 1;
 	unsigned long int b, c, temp, sum;
 
 	b = 1;
