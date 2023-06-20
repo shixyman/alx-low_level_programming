@@ -21,4 +21,4 @@ int _isalpha(int alpha)
 	{
 		return (0);
 	}
-}	
+}
