@@ -25,6 +25,6 @@ void jack_bauer(void)
 
 			min += 1;
 		}
-		min += 1;
+		hour += 1;
 	}
 }
