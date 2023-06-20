@@ -25,12 +25,13 @@ void print_to_98(int number)
 	{
 		for (b = number; b >= 98; b -= 1)
 		{
-			for (b = number ; b >= 98 ; b -= 1)
+			if (b != 98)
 			{
-				if (b != 98)
-					printf("%d, ", b);
-				else if (b == 98)
-					printf("%d\n", b);
+				printf("%d, ", b);
+			}
+			else if (b == 98)
+			{
+				printf("%d\n", b);
 			}
 		}
 	}
