@@ -8,14 +8,14 @@
  */
 int main(void)
 {
-	int a = 1;
+	int a;
 	unsigned long int b, c, temp, sum;
 
 	b = 1;
 	c = 2;
 	sum = 0;
 
-	while (a <= 33)
+	for (a =1; a <= 33; ++i)
 	{
 		if (b < 4000000 && (b % 2) == 0)
 		{
@@ -25,8 +25,6 @@ int main(void)
 		temp = b + c;
 		b = c;
 		c = temp;
-		++i;
-
 	}
 
 	printf("%lu\n", sum);
