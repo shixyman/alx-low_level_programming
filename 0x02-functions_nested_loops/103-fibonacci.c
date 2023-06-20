@@ -15,11 +15,11 @@ int main(void)
 	c = 2;
 	sum = 0;
 
-	for (a =1; a <= 33; ++a)
+	for (a = 1; a <= 33; ++a)
 	{
 		if (b < 4000000 && (b % 2) == 0)
 		{
-			sum  += c;
+			sum  += b;
 		}
 
 		temp = b + c;
