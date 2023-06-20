@@ -2,11 +2,12 @@
 
 
 /**
- * main - fibonacci <3
+ * main - fibonacci 
  *
- * Purpose - no hardcode
+ * display  the first 98 Fibonacci numbers start 0 , 2
+ * seperate with comma and new line
  *
- * Return:  (Success)
+ * Return: 0 (Successfully)
  */
 
 int main(void)
