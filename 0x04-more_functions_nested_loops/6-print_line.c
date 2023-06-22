@@ -8,8 +8,6 @@
 
 void print_line(int number)
 {
-	int number;
-
 	if (number > 0)
 	{
 		int count = 0;
