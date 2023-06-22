@@ -10,7 +10,7 @@ void print_most_umbers(void)
 {
 	int number = 0;
 
-       	while (number < 10)
+	while (number < 10)
 	{
 		if (number != 2 || number != 4)
 		{
