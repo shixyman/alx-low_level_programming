@@ -6,6 +6,7 @@
  * number multiplie by 5 = buzz
  * number multiplie by 3 & 5 =fizzbuzz
  * seperated by space
+ * Return: 0 successfully
  */
 
 int main(void)
