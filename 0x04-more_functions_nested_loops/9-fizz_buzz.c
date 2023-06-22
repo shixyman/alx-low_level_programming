@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * main - display number between 1 -100 with new line end
  * number multiplie by 3 = fizz
  * number multiplie by 5 = buzz
