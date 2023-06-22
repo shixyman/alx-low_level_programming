@@ -3,6 +3,7 @@
 /**
  * print_triange -display a  shape triange
  * @size: size of the shape
+ * Return:0 successfully like always
  */
 
 void print_triange(int size)
