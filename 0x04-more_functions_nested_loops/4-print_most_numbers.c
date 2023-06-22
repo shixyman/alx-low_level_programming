@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_numbers - display number 0  to 9
+ * print_most_numbers - display number 0  to 9
  * using _putchar twice
  * Return: successfully 0 always
 */
 
-void print_numbers(void)
+void print_most_umbers(void)
 {
 	int number = 0;
 
