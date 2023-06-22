@@ -11,7 +11,7 @@ void print_diagonal(int number)
 	{
 		int row = 1, slash;
 
-		while (number > row)
+		while (number >= row)
 		{
 			for (slash = 1; slash <= number; slash += 1)
 			{
