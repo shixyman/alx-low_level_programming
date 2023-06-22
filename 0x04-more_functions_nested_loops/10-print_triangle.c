@@ -15,7 +15,7 @@ void print_triange(int size)
 		{
 			for (sign = 0; sign <= size; sign += 1)
 			{
-				if ((row + sign) <= size)
+				if ((row + sign) < size)
 				{
 					_putchar(32);
 				}
