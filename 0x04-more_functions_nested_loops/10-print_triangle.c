@@ -14,7 +14,7 @@ void print_triange(int size)
 
 		while (row < size)
 		{
-			for (sign = 0; sign <= size; sign += 1)
+			for (sign = 1; sign <= size; sign += 1)
 			{
 				if ((row + sign) < size)
 				{
