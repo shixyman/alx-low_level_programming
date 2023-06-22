@@ -13,12 +13,13 @@ void print_diagonal(int number)
 
 		while (number >= row)
 		{
-			for (slash = 0; number > slash; slash += 1)
+			for (slash = 0; slash < number; slash += 1)
 			{
 				_putchar(' ');
 			}
 			_putchar(92);
 			_putchar('\n');
+			row += 1;
 		}
 	}
 	else
