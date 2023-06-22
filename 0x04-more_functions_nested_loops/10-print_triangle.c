@@ -1,0 +1,35 @@
+#include "main.h"
+
+/**
+ * print_triange -display a  shape triange
+ * @size: size of the shape
+ */
+
+void print_triange(int size)
+{
+	if (size > 0)
+	{
+		int row = 0, sign;
+
+		while (row < size)
+		{
+			for (sign = 0; sign <= size; sign += 1)
+			{
+				if ((row + sign) <= size)
+				{
+					_putchar(32);
+				}
+				else
+				{
+					_putchar(35)
+				}
+			}
+			_putchar('\n');
+			row += 1;
+		}
+	}
+	else
+	{
+		_putchar('\n');
+	}
+}
