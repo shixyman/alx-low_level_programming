@@ -10,7 +10,7 @@ void print_triange(int size)
 {
 	if (size > 0)
 	{
-		int row = 1, sign;
+		int row = 0, sign;
 
 		while (row <= size)
 		{
