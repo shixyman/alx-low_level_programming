@@ -11,9 +11,9 @@ void print_diagonal(int number)
 	{
 		int row = 0, slash;
 
-		while (number >= row)
+		while (number > row)
 		{
-			for (slash = 0; slash < number; slash += 1)
+			for (slash = 1; slash <= number; slash += 1)
 			{
 				_putchar(' ');
 			}
