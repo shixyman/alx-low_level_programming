@@ -38,7 +38,7 @@ int main(void)
 		}
 		num += 1;
 	}
-	_putchar('\n');
+	printf(" \n");
 
 	return (0);
 }
