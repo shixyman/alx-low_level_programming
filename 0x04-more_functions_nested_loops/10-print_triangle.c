@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_triange -display a  shape triange
+ * print_triangle -display a  shape triange
  * @size: size of the shape
  * Return:0 successfully like always
  */
 
-void print_triange(int size)
+void print_triangle(int size)
 {
 	if (size > 0)
 	{
