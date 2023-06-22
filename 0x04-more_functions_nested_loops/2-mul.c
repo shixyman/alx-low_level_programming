@@ -6,7 +6,7 @@
  * @a: first argument
  * @b: second argument
  *
- * Return: 0 successfully return sum
+ * Return: 0 successfully return muliplie
 */
 
 int mul(int a, int b)
