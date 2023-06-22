@@ -12,7 +12,7 @@ void print_triange(int size)
 	{
 		int row = 1, sign;
 
-		while (row < size)
+		while (row <= size)
 		{
 			for (sign = 1; sign <= size; sign += 1)
 			{
