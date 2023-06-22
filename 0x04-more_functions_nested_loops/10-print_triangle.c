@@ -10,7 +10,7 @@ void print_triangle(int size)
 {
 	if (size > 0)
 	{
-		int row = 0, sign;
+		int row = 1, sign;
 
 		while (row <= size)
 		{
