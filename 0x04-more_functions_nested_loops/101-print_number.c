@@ -21,7 +21,7 @@ void print_number(int number)
 		divisor *= 10;
 	}
 
-	while (divisor != 0)
+	while (divisor > 0)
 	{
 		_putchar((number / divisor) + '0');
 		number %= divisor;
