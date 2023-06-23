@@ -5,19 +5,27 @@
  *
  * @n: The integer to be printed.
  */
-
-void print_number(int num)
 {
-	unsigned int num = num;
-
-	if (num < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		num = -num;
+		n = -n;
 	}
 
-	if ((num / 10) > 0)
-		print_number(num / 10);
+	int divisor = 1;
+	int temp = n;
 
-	_putchar((num % 10) + '0');
+	while (temp > 9)
+	{
+		temp /= 10;
+		divisor *= 10;
+	}
+
+	while (divisor > 0)
+	{
+		int digit = n / divisor;
+		_putchar(digit + '0');
+		n %= divisor;
+		divisor /= 10;
+	}
 }
