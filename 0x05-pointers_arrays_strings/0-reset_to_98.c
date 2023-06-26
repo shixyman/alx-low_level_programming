@@ -8,5 +8,5 @@
  */
 void reset_to_98(int *num)
 {
-	return (*num = 98);
+	*num = 98;
 }
