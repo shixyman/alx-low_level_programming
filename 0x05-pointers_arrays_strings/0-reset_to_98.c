@@ -7,7 +7,7 @@
  * Return: value of pointer
  */
 
-int reset_to_98(int num)
+int reset_to_98(int *num)
 {
-	return (*num = 98);
+	*num = 98;
 }
