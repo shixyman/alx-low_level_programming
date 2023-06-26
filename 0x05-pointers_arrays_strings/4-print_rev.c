@@ -14,7 +14,7 @@ void print_rev(char *str)
 	{
 		lent +=1 ;
 	}
-	for (i = lent; i > 0 ; i += 1)
+	for (i = lent; i > 0 ; i -= 1)
 	{
 		_putchar(str[i]);
 	}
