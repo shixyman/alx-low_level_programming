@@ -21,7 +21,7 @@ void rev_string(char *str)
 	while (first <= last)
 	{
 		tmp = str[first];
-		first = str[last];
+		str[first] = str[last];
 		str[last] = tmp;
 		first += 1;
 		last -= 1;
