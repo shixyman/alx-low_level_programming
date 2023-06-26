@@ -6,8 +6,7 @@
  * @num: parameter of funtion
  * Return: value of pointer
  */
-
-int reset_to_98(int *num)
+void reset_to_98(int *num)
 {
 	return (*num = 98);
 }
