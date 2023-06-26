@@ -8,14 +8,15 @@
 
 void rev_string(char *str)
 {
-	int lent = 0;
+	int lent = 0, first, last, tmp;
 
 	while (str[lent] != '\0')
 	{
 		lent += 1;
 	}
 
-	int first = 0, last = lent - 1, tmp;
+	first = 0;
+	last = lent - 1;
 
 	while (first < last)
 	{
