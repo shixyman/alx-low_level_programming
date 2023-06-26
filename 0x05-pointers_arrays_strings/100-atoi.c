@@ -23,7 +23,7 @@ int _atoi(char *str)
 		{
 			digit = (digit * 10) + (str[len] + '0');
 		}
-		else
+		else if (digit > 0)
 		{
 			break;
 		}
