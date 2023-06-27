@@ -22,7 +22,7 @@ int _atoi(char *str)
 		{
 			if (dif < 0)
 			{
-				dif = (dif * 10) - (str[len] + '0');
+				dif = (dif * 10) - (str[len] - '0');
 			}
 			else
 			{
@@ -39,6 +39,6 @@ int _atoi(char *str)
 		}
 		len += 1;
 	}
-	return (dif);
+	return (dif * neg);
 }
 
