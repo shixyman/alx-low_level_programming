@@ -1,38 +1,21 @@
 #include <stdio.h>
-#include <stdint.h>
-
-/**
- *  main - crackme
- *  checksum -  error detection
- *  @arg1: parameter
- *  Return: value
- */
-
-int64_t checksum(char *arg1);
+#include <stdlib.h>
+#include <time.h>
 
 int main(void)
 {
-	char *arg1 = "AAA";
+	int myrand;
+	int count;
+	int total;
 
-	int a = checksum(arg1);
-
-	printf("sum %d\n", a);
+	srand(time(NULL));
+	for (count = 0, total = 2772; total > 122; count++)
+	{
+		myrand = (rand() % 125) + 1;
+		printf("%c", myrand);
+		total -= myrand;
+	}
+	printf("%c", total);
 
 	return (0);
-}
-
-int64_t checksum(char *arg1)
-{
-	char var_18h;
-	int64_t var_8h;
-
-	var_8h = 0;
-
-	for (var_18h = *arg1; *arg1 != '\0'; arg1++)
-	{
-		printf("%c\n", var_18h);
-		var_8h = var_8h + var_18h;
-		var_18h = *arg1;
-	}
-	return (var_8h);
 }
