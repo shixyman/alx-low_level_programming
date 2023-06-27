@@ -11,7 +11,7 @@
 int _atoi(char *str)
 {
 	unsigned int digit = 0;
-	int neg, len = 0;
+	int neg, len = 0, dif = 0;
 
 	while (str[len] != '\0')
 	{
@@ -21,13 +21,24 @@ int _atoi(char *str)
 		}
 		if (str[len] > 47 && str[len] < 58)
 		{
-			digit = (digit * 10) + (str[len] + '0');
+			if (dif < 0)
+			{
+				dif = (dif * 10) + (str[len] + '0');
+			}
+			else
+			{
+				dif = (str[len] - '0') * -1;
+			}
+			if (str[len + 1] < 48 || str[len + 1] > 57)
+			{
+				break;
+			}
 		}
-		else if (digit > 0)
+		if (neg > 0)
 		{
-			break;
+			dif *= 1;
 		}
 	}
-	return (digit * neg);
+	return (dif);
 }
 
