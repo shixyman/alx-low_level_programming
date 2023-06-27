@@ -10,7 +10,7 @@
 
 int _atoi(char *str)
 {
-	int neg, len = 0, dif = 0;
+	int neg = -1, len = 0, dif = 0;
 
 	while (str[len] != '\0')
 	{
