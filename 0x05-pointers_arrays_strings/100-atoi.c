@@ -22,7 +22,7 @@ int _atoi(char *str)
 		{
 			if (dif < 0)
 			{
-				dif = (dif * 10) + (str[len] + '0');
+				dif = (dif * 10) + (str[len] - '0');
 			}
 			else
 			{
