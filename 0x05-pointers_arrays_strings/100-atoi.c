@@ -33,10 +33,11 @@ int _atoi(char *str)
 				break;
 			}
 		}
-		if (neg > 0)
+		if (neg < 0)
 		{
 			dif *= 1;
 		}
+		len += 1;
 	}
 	return (dif);
 }
