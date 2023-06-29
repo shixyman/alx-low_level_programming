@@ -22,7 +22,7 @@ char *leet(char *str)
 
 		while (count < 10)
 		{
-			if (str[len] == dicLetter[count])
+			if (dicLetter[count] == str[len])
 			{
 				str[len] = dicNumeric[count];
 			}
