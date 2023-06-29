@@ -20,7 +20,7 @@ char *leet(char *str)
 	{
 		int count = 0;
 
-		while (dicLetter[count] != 0)
+		while (dicLetter[count] != '\0')
 		{
 			if (str[len] == dicLetter[count])
 			{
