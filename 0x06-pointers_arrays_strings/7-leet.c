@@ -12,13 +12,13 @@
  */
 char *leet(char *str)
 {
-	int len = 0;
+	int len = 0, count;
 	char dicLetter[] = "lLtToOeEaA";
 	char dicNumeric[] = "1177003344";
 
 	while (str[len] != '\0')
 	{
-		int count = 0;
+		count = 0;
 
 		while (count < 10)
 		{
