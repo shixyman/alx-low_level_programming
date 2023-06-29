@@ -12,24 +12,25 @@
  */
 char *leet(char *str)
 {
-	int len = 0, count;
-	char dicLetter[] = "lLtToOeEaA";
-	char dicNumeric[] = "1177003344";
+	int len, count;
+	char dicLetter[] = "aAeEoOtTlL";
+	char dicNumeric[] = "4433007711";
 
+/*  scan through string */
+	len = 0;
 	while (str[len] != '\0')
+/* check whether leetLetter is found */
 	{
 		count = 0;
-
 		while (count < 10)
 		{
 			if (dicLetter[count] == str[len])
 			{
 				str[len] = dicNumeric[count];
 			}
-			count += 1;
+			count++;
 		}
-		len += 1;
+		len++;
 	}
-
 	return (str);
 }
