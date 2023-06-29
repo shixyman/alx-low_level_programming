@@ -30,5 +30,6 @@ char *leet(char *str)
 		}
 		len += 1;
 	}
+
 	return (str);
 }
