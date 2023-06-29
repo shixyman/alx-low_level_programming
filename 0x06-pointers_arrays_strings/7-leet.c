@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * *leet - crypt your message
@@ -12,25 +12,23 @@
  */
 char *leet(char *str)
 {
-	int len, count;
-	char dicLetter[] = "aAeEoOtTlL";
-	char dicNumeric[] = "4433007711";
+	int len = 0;
+	char dicLetter[] = "lLtToOeEaA";
+	char dicNumeric[] = "1177003344";
 
-/*  scan through string */
-	len = 0;
 	while (str[len] != '\0')
-/* check whether leetLetter is found */
 	{
-		count = 0;
-		while (count < 10)
+		int count = 0;
+
+		while (dicLetter[count] != 0)
 		{
-			if (dicLetter[count] == str[len])
+			if (str[len] == dicLetter[count])
 			{
 				str[len] = dicNumeric[count];
 			}
-			count++;
+			count += 1;
 		}
-		len++;
+		len += 1;
 	}
 	return (str);
 }
