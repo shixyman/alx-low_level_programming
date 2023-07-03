@@ -21,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (accept[count] == s[len])
 			{
-				p = &q[len];
+				p = &s[len];
 				return (p);
 			}
 			count += 1;
