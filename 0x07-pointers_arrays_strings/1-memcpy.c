@@ -15,6 +15,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		src[len] = dest[len];
 		len += 1;
+		n -= 1;
 	}
 	return (dest);
 }
