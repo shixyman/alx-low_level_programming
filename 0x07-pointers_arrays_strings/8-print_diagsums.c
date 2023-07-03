@@ -7,7 +7,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int len = 0, sum1 = 0, sum2 = 0;
+	int len, sum1 = 0, sum2 = 0;
 
 	for (len = 0; len < size; len += 1)
 	{
@@ -16,8 +16,6 @@ void print_diagsums(int *a, int size)
 	}
 
 	a -= size;
-
-	len = 0;
 
 	for (len = 0; len < size; len += 1)
 	{
