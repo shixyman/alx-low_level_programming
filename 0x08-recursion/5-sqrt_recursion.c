@@ -23,7 +23,7 @@ int sqrt(int dig, int test)
 
 int _sqrt_recursion(int num)
 {
-	if (n < 0)
+	if (num < 0)
 		return (-1);
 	return (sqrt(num, 0));
 }
