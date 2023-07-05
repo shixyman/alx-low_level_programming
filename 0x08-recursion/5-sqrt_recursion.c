@@ -9,7 +9,7 @@
 int sqrt(int dig, int test)
 {
 	if (dig * dig == test)
-		return (g);
+		return (dig);
 	if (dig * dig > test)
 		return (-1);
 	return (sqrt(dig + 1, test));
