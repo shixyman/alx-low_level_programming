@@ -2,7 +2,7 @@
 int _sqrt(int dig, int root);
 int _sqrt_recursion(int num);
 /**
- * sqrt - calculate the sqrt root of dig
+ * _sqrt - calculate the sqrt root of dig
  * @dig: parameter to find the sqrt root
  * @test: paramter of testing
  * Return: root sqrt or -1
