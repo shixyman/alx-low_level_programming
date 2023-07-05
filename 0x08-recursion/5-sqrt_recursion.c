@@ -13,7 +13,7 @@ int _sqrt(int dig, int test)
 		return (dig);
 	if (dig * dig > test)
 		return (-1);
-	return (sqrt(dig + 1, test));
+	return (_sqrt(dig + 1, test));
 }
 
 /**
