@@ -8,11 +8,11 @@
  */
 int sqrt(int dig, int test)
 {
+	if (dig * dig == test)
+		return (g);
 	if (dig * dig > test)
 		return (-1);
-	if (dig * dig == test)
-		return (dig);
-	return (sqrt(dig + 1, test));
+	return (sqrt_check(dig + 1, test));
 }
 
 /**
@@ -20,7 +20,6 @@ int sqrt(int dig, int test)
  * @num: parameter of number to calculate
  * Return: result of square root
  */
-
 int _sqrt_recursion(int num)
 {
 	if (num == 0)
