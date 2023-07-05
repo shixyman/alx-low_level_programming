@@ -25,5 +25,5 @@ int _sqrt_recursion(int num)
 {
 	if (num == 0)
 		return (0);
-	return (sqrt(0, num));
+	return (sqrt(1, num));
 }
