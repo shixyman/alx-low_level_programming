@@ -12,7 +12,7 @@ int verify_prime(int num, int div)
 		return (0);
 	if (num / 2 == div)
 		return (1);
-	return (verify(num, div + 1));
+	return (verify_prime(num, div + 1));
 }
 /**
  * is_prime_number - checking if a number is prime
@@ -22,7 +22,9 @@ int verify_prime(int num, int div)
  */
 int is_prime_number(int n)
 {
-	if (n == 2)
+	if (n <= 1)
+		return (0);
+	if (n >= 2 && n <= 3)
 		return (1);
-	return (prime_check(2, n));
+	return (verify_prime(n, 2));
 }
