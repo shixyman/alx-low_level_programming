@@ -1,5 +1,5 @@
 #include "main.h"
-int sqrt(int dig, int root);
+int _sqrt(int dig, int root);
 int _sqrt_recursion(int num);
 /**
  * sqrt - calculate the sqrt root of dig
@@ -7,7 +7,7 @@ int _sqrt_recursion(int num);
  * @test: paramter of testing
  * Return: root sqrt or -1
  */
-int sqrt(int dig, int test)
+int _sqrt(int dig, int test)
 {
 	if (dig * dig == test)
 		return (dig);
@@ -25,5 +25,5 @@ int _sqrt_recursion(int num)
 {
 	if (num == 0)
 		return (0);
-	return (sqrt(1, num));
+	return (_sqrt(1, num));
 }
