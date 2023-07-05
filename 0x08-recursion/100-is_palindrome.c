@@ -24,9 +24,9 @@ int _strlen(char *str)
  */
 int check_palindrome(int first, int last, char *p)
 {
-	if (len >= r)
+	if (first >= last)
 		return (1);
-	else if (p[l] != p[r])
+	else if (p[first] != p[last])
 		return (0);
 	else
 		return (check_palindrome(first + 1, last - 1, p));
