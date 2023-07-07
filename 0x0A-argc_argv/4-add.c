@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int len = 1, count, sum = 0;
 
-	for (len < argc)
+	while (len < argc)
 	{
 		for (count = 0; argv[len][count]; count += 1)
 		{
