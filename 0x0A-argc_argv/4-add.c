@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	for (len < argc)
 	{
-		for (len = 0; argv[len][count]; j += 1)
+		for (len = 0; argv[len][count]; len += 1)
 		{
 			if (!(argv[len][count] >= '0' && argv[len][count] <= '9'))
 			{
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 			}
 		}
 		sum += atoi(argv[len]);
-		i += 1;
+		len += 1;
 	}
 	printf("%d\n", sum);
 	return (0);
