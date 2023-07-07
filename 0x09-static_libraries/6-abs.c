@@ -8,7 +8,7 @@
 
 int _abs(int number)
 {
-	if (number < 5)
+	if (number < 0)
 	{
 		return (number * (-1));
 	}
