@@ -7,7 +7,8 @@
  * @argc:parameter of size argv
  * Return: always sucessfully 0
  */
-int main(int argc, char *argc[])
+
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
