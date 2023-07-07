@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * main - testing
+ * Return: 0 successfuly
+ */
 
 int main(void)
 {
