@@ -64,7 +64,7 @@ char **strtow(char *str)
 		for (i = 0; str[i] != ' ' && str[i] != '\0'; i++)
 			ptr[row][i] = str[i];
 		ptr[row][i] = '\0';
-		r += 1;
+		row += 1;
 		str += i;
 	}
 	ptr[row] = NULL;
