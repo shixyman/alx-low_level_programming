@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
+
 /**
- * wcount - count the number of words
+ * wdcount - count the number of words
  * @str: parameter ofstring to count words
  * Return: number of words
  */
