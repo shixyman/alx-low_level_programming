@@ -5,57 +5,44 @@
  * @str: pointer to the string to print
  * Return: void
 */
-
 void _puts(char *str)
 {
-	while (*str != 0)
-	{
-		_putchar(*str);
-		str += 1;
-	}
-	_putchar('\n');
+int i = 0;
+while (str[i])
+{
+	_putchar(str[i]);
+	i++;
+}
+
 }
 
 /**
  * _atoi - convert a string to an integer.
- * @str: char type string
+ * @s: char type string
  * Return: integer converted
  */
 
-int _atoi(char *str)
+int _atoi(const char *s)
 {
-	int neg = -1, len = 0, dif = 0;
+    int sign = 1;
+	unsigned long int resp = 0, firstNum, i;
 
-	while (str[len] != '\0')
+	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
 	{
-		if (str[len] == '-')
+		if (s[firstNum] == '-')
 		{
-			neg *= -1;
+			sign *= -1;
 		}
-		if (str[len] > 47 && str[len] < 58)
-		{
-			if (dif < 0)
-			{
-				dif = (dif * 10) - (str[len] - '0');
-			}
-			else
-			{
-				dif = (str[len] - '0') * -1;
-			}
-			if (str[len + 1] < 48 || str[len + 1] > 57)
-			{
-				break;
-			}
-		}
-		if (neg < 0)
-		{
-			dif *= 1;
-		}
-		len += 1;
 	}
-	return (dif * neg);
-}
 
+	for (i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
+	{
+		resp *= 10;
+		resp += (s[i] - 48);
+	}
+
+	return (sign * resp);
+}
 
 /**
  * print_int - prints an integer.
