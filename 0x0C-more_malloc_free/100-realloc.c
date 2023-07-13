@@ -28,5 +28,5 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	while (old_size--)
 		pointer[old_size] = ((char *)ptr)[old_size];
 	free(ptr);
-	return ((void *)p);
+	return ((void *)pointer);
 }
